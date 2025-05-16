@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrarse - CYBERSHIELD ACADEMY</title>
+    <link rel="stylesheet" href="static/css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="header-container">
+            <div class="logo">
+                <a href="/pagina">
+                    <h1>CYBERSHIELD ACADEMY</h1>
+                </a>
+            </div>
+        </div>
+        <div class="login-box">
+            <h1>Registrarse</h1>
+            <form method="POST" action="/registro">
+                <input type="text" name="usuario" placeholder="Nombre de usuario" required>
+                <input type="email" name="correo" placeholder="Correo electrónico" required>
+                <input type="password" name="contrasena" placeholder="Contraseña" required>
+                <input type="password" name="confirmar" placeholder="Confirmar contraseña" required>
+                <button type="submit">Crear cuenta</button>
+                <div class="extra-links">
+                    <a href="/login">¿Ya tienes cuenta? Inicia sesión</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

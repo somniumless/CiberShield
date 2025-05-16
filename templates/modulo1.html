@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 1 - ¿Qué es la Ciberseguridad?</title>
+  <link rel="stylesheet" href="../static/css/modulo1.css">
+</head>
+<body>
+  <div class="video-section">
+    <div class="video-wrapper">
+      <video controls poster="71b019a9-d4e1-48cd-9741-09a29078534f.png">
+        <source src="../static/img/Naturaleza - Pixabay.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+      </video>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab-button active">Descripción general</button>
+    <button class="tab-button">Preguntas y respuestas</button>
+    <button class="tab-button">Notas</button>
+    <button class="tab-button">Anuncios</button>
+    <button class="tab-button">Valoraciones</button>
+    <button class="tab-button">Herramientas de aprendizaje</button>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.tab-button');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background: #000; /* Fondo negro */
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: linear-gradient(to bottom right, #3a3a3a, #2a2a2a);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #ff4d4d;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #444;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    color: #eee;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(255, 77, 77, 0.3);
+    background: #555;
+}
+
+.duration {
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+.duracion-general {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.modulo-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+

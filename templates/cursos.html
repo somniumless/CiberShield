@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cursos de Ciberseguridad</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cursos.css') }}">
+</head>
+<body>
+    <header class="course-header">
+        <h1>Nuestros Cursos de Ciberseguridad</h1>
+        <p>Explora nuestro catálogo de cursos diseñados para todos los niveles.</p>
+    </header>
+
+    <main class="course-section">
+        <h2>Cursos Destacados</h2>
+        <div class="course-grid">
+            <div class="course-card">
+                <h3>Introducción a la Ciberseguridad</h3>
+                <p>Aprende los fundamentos de la ciberseguridad y las amenazas comunes.</p>
+                <a href="/introduccion_ciberseguridad">Ver Detalles</a>
+            </div>
+            <div class="course-card">
+                <h3>Seguridad en Redes</h3>
+                <p>Descubre cómo proteger tu red de accesos no autorizados y ataques.</p>
+                <a href="#">Ver Detalles</a>
+            </div>
+            <div class="course-card">
+                <h3>Hacking Ético</h3>
+                <p>Domina las técnicas de hacking ético para identificar vulnerabilidades.</p>
+                <a href="#">Ver Detalles</a>
+            </div>
+            <div class="course-card">
+                <h3>Seguridad en la Nube</h3>
+                <p>Aprende a asegurar tus datos y aplicaciones en entornos de nube.</p>
+                <a href="#">Ver Detalles</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

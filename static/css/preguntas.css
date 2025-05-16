@@ -1,0 +1,122 @@
+/* Estilos CSS para las preguntas frecuentes */
+.faq-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #303030;
+    border-radius: 12px; /* Aumenta el radio del borde para un aspecto más suave */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.faq-container:hover {
+    background-color: #3a3a3a; /* Ligeramente más claro al pasar el mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Aumenta la sombra al pasar el mouse */
+}
+
+.faq-titulo {
+    text-align: center;
+    font-size: 36px; /* Aumenta el tamaño del título */
+    margin-bottom: 30px;
+    color: #e50914;
+    letter-spacing: -0.02em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); /* Añade sombra al texto */
+}
+
+.logo h1 {
+    color: #e50914;
+    font-size: 32px; /* Aumenta el tamaño del logo */
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.faq-pregunta {
+    font-size: 20px; /* Aumenta el tamaño de la pregunta */
+    font-weight: bold;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #4a4a4a; /* Línea divisoria más clara */
+    background-color: #3b3b3b;
+    border-radius: 8px; /* Añade border-radius a la pregunta */
+    transition: background-color 0.2s ease; /* Transición suave al pasar el mouse */
+}
+
+.faq-pregunta:hover {
+    background-color: #444444; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.faq-pregunta::after {
+    content: '+';
+    font-size: 28px; /* Aumenta el tamaño del signo */
+    color: #fff;
+    transition: transform 0.3s ease; /* Transición para la rotación */
+}
+
+.faq-pregunta.active::after {
+    content: '-';
+    transform: rotate(180deg); /* Rota el signo - cuando la respuesta está activa */
+}
+
+.faq-respuesta {
+    display: none;
+    padding: 20px; /* Aumenta el padding de la respuesta */
+    margin-bottom: 20px;
+    background-color: #3b3b3b;
+    border-radius: 8px;
+    color: #eee; /* Color de texto más claro */
+    line-height: 1.7; /* Mejora la legibilidad del texto */
+    opacity: 0; /* Inicialmente invisible */
+    animation: fadeIn 0.5s ease forwards; /* Animación de aparición */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+.faq-respuesta.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .faq-container {
+        padding: 20px;
+    }
+
+    .faq-titulo {
+        font-size: 28px;
+    }
+
+    .faq-pregunta {
+        font-size: 18px;
+    }
+
+    .faq-respuesta {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+
+body {
+    background-color: #111;
+    font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial o similar */
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 25px 0;
+    text-align: center;
+    border-top: 1px solid #333; /* Añade una línea superior al pie de página */
+}

@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #000000;
+    line-height: 1.6;
+}
+.container {
+    max-width: 800px;
+    margin: 70px auto 50px auto;
+    padding: 20px;
+    background-color: #f5f5dc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+h1 {
+    color: #e50914;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+    font-size: 28px;
+    font-weight: bold;
+}
+p {
+    margin-bottom: 15px;
+    width: 100%;
+    color: #666;
+}
+a{
+  color: #0078d7;
+}
+a:hover{
+  color: #00a0e9;
+}
+.section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000000;
+}
+.section h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.faq-item {
+    margin-bottom: 15px;
+}
+.faq-item h3 {
+    color: #da380f;
+    margin-bottom: 5px;
+}
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #000000;
+    font-size: 0.9em;
+    width: 100%;
+    background-color: #111;
+    padding: 40px 20px;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        margin-top: 70px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+.logo h1 {
+    color: #e50914;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
