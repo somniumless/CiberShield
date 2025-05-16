@@ -5,7 +5,7 @@ import os
 
 app = Flask(__name__)
 
-@app.route('/pagina')
+@app.route('/')
 def inicio():
     return render_template('pagina.html')
 
